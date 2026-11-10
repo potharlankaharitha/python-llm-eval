@@ -1,19 +1,15 @@
-# python-llm-eval
+# Python LLM Eval - Response Evaluator
 
-My Python practice repo for LLM evaluation and testing.
+Evaluate LLM responses for quality, relevance, safety, hallucination & bias.
+Built for LLM evaluation / Alignerr-style review tasks.
 
-## What this repo does
-This repository contains Python scripts for evaluating LLM responses:
-- `main.py` - Basic text analyzer (word count, quality check)
-- `metrics.py` - Relevance scoring, hallucination risk detection
-- `checker.py` - Response validation and scoring logic
+## Features
+- **main.py** - Length, repetition, relevance, safety, final score (PASS/FAIL)
+- **metrics.py** - BLEU, ROUGE, F1, Accuracy, Relevance, Compare 2 responses (A/B)
+- **checker.py** - Validation, Safety, Hallucination detection, Bias check, Final Verdict (APPROVE / REJECT / NEEDS REVIEW)
 
-## Skills Demonstrated
-- Python (text processing, functions, file handling)
-- LLM Evaluation Concepts (relevance, quality checks, hallucination flags)
-- Git & GitHub (commits, branches, repo management)
-
-## How to run
+## How to Run
 ```bash
 python main.py
 python metrics.py
+python checker.py
